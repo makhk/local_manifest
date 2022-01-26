@@ -2,6 +2,9 @@
 <manifest>
   <remote  name="makhk"
            fetch="https://github.com/makhk" />
+  
+    <remote  name="anxx"
+           fetch="https://gitlab.com/basamaryan" />
 
  <remote name="arrowxx"
          fetch="https://github.com/ArrowOS" />
@@ -10,17 +13,17 @@
 <remove-project name="platform_hardware_qcom_display" />
  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="arrowxx" revision="arrow-12.0-caf-sm8150"/>
 
-<!-- sepolicy -->
-<remove-project name="platform_device_aosp_sepolicy" />
- <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="makhk" revision="12.x"/>
+<!-- ANXCam -->
+  <project path="vendor/ANXCamera"         name="proprietary_vendor_anxcamera" remote="anxx" revision="12"/>
+ 
 
 <!-- Kernels -->
   <project path="kernel/xiaomi/sweet"         name="kernel_xiaomi_sweet" remote="makhk" revision="11-test"  clone-depth="1"/>
 
  <!-- Device Trees -->
-  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-aex"/>
+  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-flos-miui"/>
 
  <!-- Vendor Trees -->
- <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet" remote="makhk" revision="12" />
+ <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet" remote="makhk" revision="12-miui" />
 
 </manifest>
