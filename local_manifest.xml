@@ -3,15 +3,11 @@
   <remote  name="makhk"
            fetch="https://github.com/makhk" />
   
-    <remote  name="anxx"
+  <remote  name="anxx"
            fetch="https://gitlab.com/basamaryan" />
 
- <remote name="arrowxx"
+  <remote name="arrowxx"
          fetch="https://github.com/ArrowOS" />
-
- <!-- hals -->
-<remove-project name="android_hardware_qcom_display" />
- <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="arrowxx" revision="arrow-12.0-caf-sm8150"/>
 
 <!-- ANXCam -->
   <project path="vendor/ANXCamera"         name="proprietary_vendor_anxcamera" remote="anxx" revision="12"/>
