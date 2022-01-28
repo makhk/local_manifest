@@ -15,7 +15,7 @@
  <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="makhk" revision="12.x"/>
 
 <!-- Kernels -->
-  <project path="kernel/xiaomi/sweet"         name="kernel_xiaomi_sweet" remote="makhk" revision="11-test"  clone-depth="1"/>
+  <project path="kernel/xiaomi/sweet"         name="kernel_xiaomi_sweet" remote="makhk" revision="12-oss"  clone-depth="1"/>
 
  <!-- Device Trees -->
   <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-aex"/>
