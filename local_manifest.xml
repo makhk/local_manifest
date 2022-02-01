@@ -13,14 +13,18 @@
 <!-- sepolicy -->
 <remove-project name="platform_device_aosp_sepolicy" />
  <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="makhk" revision="12.x"/>
+  
+
+ <!-- proton clang -->
+ <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kdrag0n" revision="master" />
 
 <!-- Kernels -->
-  <project path="kernel/xiaomi/sweet"         name="kernel_xiaomi_sm6150" remote="makhk" revision="12"  clone-depth="1"/>
+  <project path="kernel/xiaomi/sweet"         name="kernel_xiaomi_sm6150" remote="makhk" revision="courbet"  clone-depth="1"/>
 
  <!-- Device Trees -->
-  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-aex"/>
+  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet-1" remote="makhk" revision="12"/>
 
  <!-- Vendor Trees -->
- <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet" remote="makhk" revision="12" />
+ <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet-1" remote="makhk" revision="snow" />
 
 </manifest>
