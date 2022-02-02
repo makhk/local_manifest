@@ -8,9 +8,7 @@
   
  <remote name="kd"
          fetch="https://github.com/kdrag0n" />
-  
-  <remote name="dby"
-         fetch="https://gitlab.com/sweetin" />
+
 
   <!-- hals -->
   <remove-project name="platform_hardware_qcom_display" />
@@ -20,8 +18,6 @@
   <remove-project name="platform_device_aosp_sepolicy" />
   <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="makhk" revision="12.x"/>
  
-  <!-- dolby -->
-  <project path="vendor/dolby" name="android-vendor-dolby" remote="dby" revision="twelve" />
 
   <!-- proton clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kd" revision="master" />
