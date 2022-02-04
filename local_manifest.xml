@@ -6,9 +6,8 @@
  <remote name="arrowxx"
          fetch="https://github.com/ArrowOS" />
   
- <remote name="kd"
-         fetch="https://github.com/kdrag0n" />
-
+ <remote name="arcanaxx"
+         fetch="https://github.com/projectarcana-aosp" />
 
   <!-- hals -->
   <remove-project name="platform_hardware_qcom_display" />
@@ -17,18 +16,20 @@
   <!-- sepolicy -->
   <remove-project name="platform_device_aosp_sepolicy" />
   <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="makhk" revision="12.x"/>
- 
-
-  <!-- proton clang -->
-  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kd" revision="master" />
   
+  <remove-project name="platform_device_qcom_sepolicy" />
+  <project path="device/qcom/sepolicy" name="platform_device_qcom_sepolicy" remote="arcanaxx" revision="12.x"/>
+  
+  <remove-project name="platform_device_qcom_sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr" name="platform_device_qcom_sepolicy_vndr" remote="arcanaxx" revision="12.x"/>
+ 
   <!-- Device Trees -->
-  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet-1" remote="makhk" revision="12"/>
+  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-test"/>
 
   <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet-1" remote="makhk" revision="snow" />
+  <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet" remote="makhk" revision="12" />
 
   <!-- Kernels -->
-  <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sm6150" remote="makhk" revision="courbet"  clone-depth="1"/>
+  <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sweet" remote="makhk" revision="12-oss"  clone-depth="1"/>
 
 </manifest>
