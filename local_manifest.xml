@@ -16,7 +16,7 @@
   
     <!-- sepolicy -->
   <remove-project name="platform_system_sepolicy" />
-  <project path="system/sepolicy" name="platform_system_sepolicy" remote="makhk" revision="12.x-test"/>
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="makhk" revision="12.x"/>
   
   <!-- Device Trees -->
   <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-test"/>
