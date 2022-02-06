@@ -2,29 +2,32 @@
 <manifest>
   <remote  name="makhk"
            fetch="https://github.com/makhk" />
-
- <remote name="arrowxx"
-         fetch="https://github.com/ArrowOS" />
   
-  <!-- hals -->
-  <remove-project name="platform_hardware_qcom_display" />
-  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="arrowxx" revision="arrow-12.0-caf-sm8150"/>
+ <remote name="vantomm"
+         fetch="https://github.com/vantoman" />
+ 
+ <remote  name="anxx"
+         fetch="https://gitlab.com/basamaryan" />
+ 
 
   <!-- sepolicy -->
   <remove-project name="platform_device_aosp_sepolicy" />
   <project path="device/aosp/sepolicy" name="platform_device_aosp_sepolicy" remote="makhk" revision="12.x"/>
   
-    <!-- sepolicy -->
+  <!-- sepolicy -->
   <remove-project name="platform_system_sepolicy" />
   <project path="system/sepolicy" name="platform_system_sepolicy" remote="makhk" revision="12.x"/>
   
+  <!-- ANXCam -->
+  <project path="vendor/ANXCamera"         name="proprietary_vendor_anxcamera" remote="anxx" revision="12"/>
+  
   <!-- Device Trees -->
-  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-test"/>
+  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-miui-test"/>
 
   <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet" remote="makhk" revision="12" />
+  <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet-1" remote="makhk" revision="twelve" />
 
   <!-- Kernels -->
-  <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sweet" remote="makhk" revision="12-oss"  clone-depth="1"/>
+  <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sm6150" remote="vantomm" revision="courbet"  clone-depth="1"/>
 
 </manifest>
