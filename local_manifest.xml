@@ -11,6 +11,10 @@
 
  <remote name="kd"
          fetch="https://github.com/kdrag0n" />
+  
+  <!-- sepolicy -->
+  <remove-project name="platform_system_sepolicy" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="makhk" revision="12.x"/>
 
   <!-- proton clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kd" revision="master" />
