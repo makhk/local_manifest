@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote  name="makhk"
+  <remote  name="makhk-devices"
+           fetch="https://github.com/makhk-devices" />
+  
+    <remote  name="makhk"
            fetch="https://github.com/makhk" />
   
  <remote name="vantomm"
          fetch="https://github.com/vantoman" />
- 
- <remote  name="anxx"
-         fetch="https://gitlab.com/basamaryan" />
 
  <remote name="kd"
          fetch="https://github.com/kdrag0n" />
@@ -19,14 +19,12 @@
   <!-- proton clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kd" revision="master" />
 
-  <!-- ANXCam -->
-  <project path="vendor/ANXCamera"         name="proprietary_vendor_anxcamera" remote="anxx" revision="12"/>
   
   <!-- Device Trees -->
-  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-miui-test"/>
+  <project path="device/xiaomi/sweet"  name="android_device_xiaomi_sweet" remote="makhk-devices" revision="12"/>
 
   <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet-1" remote="makhk" revision="twelve" />
+  <project path="vendor/xiaomi/sweet" name="proprietary_vendor_xiaomi_sweet" remote="makhk-devices" revision="12" />
 
   <!-- Kernels -->
   <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sm6150" remote="vantomm" revision="courbet"  clone-depth="1"/>
