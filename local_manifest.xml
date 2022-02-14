@@ -2,9 +2,15 @@
 <manifest>
   <remote  name="makhk"
            fetch="https://github.com/makhk" />
+  
+  <remote  name="makhkdevices"
+           fetch="https://github.com/makhk-devices" />
 
  <remote name="arrowxx"
          fetch="https://github.com/ArrowOS" />
+  
+ <remote name="kd"
+         fetch="https://github.com/kdrag0n" />
 
  <!-- hals -->
 <remove-project name="platform_hardware_qcom_display" />
@@ -16,12 +22,15 @@
 
 
   <!-- Device Trees -->
-  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-arcana"/>
+  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhkdevices" revision="12-miui-arcana"/>
 
   <!-- Vendor Trees -->
-  <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet" remote="makhk" revision="12" />
+  <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet" remote="makhk" revision="12-miui" />
 
   <!-- Kernels -->
-  <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sweet" remote="makhk" revision="12-oss"  clone-depth="1"/>
+  <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sm6150" remote="makhk" revision="courbet"  clone-depth="1"/>
+  
+  <!-- proton clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kd" revision="master" />
 
 </manifest>
