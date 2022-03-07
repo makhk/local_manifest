@@ -3,11 +3,6 @@
   <remote  name="makhk"
            fetch="https://github.com/makhk" />
 
-  <remote name="kd"
-         fetch="https://github.com/kdrag0n" /> 
-  
-  <remote name="vantomm"
-         fetch="https://github.com/vantoman" />
 
   
  <!-- Device Trees -->
@@ -17,9 +12,7 @@
  <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet" remote="makhk" revision="12-miui" />
  
   <!-- Kernels -->
-  <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sm6150" remote="vantomm" revision="courbet"  clone-depth="1"/>
-  
-  <!-- proton clang -->
-  <project path="prebuilts/clang/host/linux-x86/clang-proton" name="proton-clang" remote="kd" revision="master" /> 
+  <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sweet" remote="makhk" revision="12-miui"  clone-depth="1"/>
+ 
 
 </manifest>
