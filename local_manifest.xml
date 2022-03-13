@@ -3,17 +3,6 @@
   <remote  name="makhk"
            fetch="https://github.com/makhk" />
   
-  <remote name="arrowxx"
-         fetch="https://github.com/ArrowOS" />
-  
- <!-- hals -->
-<remove-project name="platform_hardware_qcom_display" />
-<remove-project name="platform_hardware_qcom_audio" />
-<remove-project name="platform_hardware_qcom_media" />
-<project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" remote="arrowxx" revision="arrow-12.0-caf-sm8150"/>
-<project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" remote="arrowxx" revision="arrow-12.0-caf-sm8150"/>
-<project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" remote="arrowxx" revision="arrow-12.0-caf-sm8150"/>
-  
   <!-- Device Trees -->
   <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-aex"/>
 
