@@ -8,8 +8,8 @@
 
   <!-- Vendor Trees -->
   <project path="vendor/xiaomi/sweet" name="vendor_xiaomi_sweet" remote="makhk" revision="12" />
-
-  <!-- Kernels -->
-  <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sweet" remote="makhk" revision="12"  clone-depth="1"/>
   
+  <!-- Kernel Trees -->
+  <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sm6150" remote="makhk" revision="courbet"  clone-depth="1"/>
+
 </manifest>
