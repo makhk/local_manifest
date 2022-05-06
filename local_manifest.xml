@@ -6,9 +6,6 @@
     <remote  name="makhkdevices"
            fetch="https://github.com/makhk-devices" />
 
- <!-- fwb-test -->
-<remove-project name="android_frameworks_base" />
-<project path="frameworks/base" name="android_frameworks_base" remote="makhkdevices" revision="lineage-19.1"/>
   
  <!-- Device Trees -->
   <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhkdevices" revision="12-flos-test"/>
