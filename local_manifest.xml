@@ -7,6 +7,10 @@
            fetch="https://github.com/makhk-devices" />
 
   
+ <!-- android_frameworks_libs_systemui -->
+  
+  <project path="frameworks/libs/systemui" name="crdroidandroid/android_frameworks_libs_systemui" remote="crdroid" />
+
  <!-- Device Trees -->
   <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhkdevices" revision="12-flos-test"/>
 
