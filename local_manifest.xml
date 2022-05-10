@@ -18,6 +18,9 @@
  
   <!-- Kernels -->
   <project path="kernel/xiaomi/sm6150"  name="kernel_xiaomi_sm6150" remote="vantoman" revision="courbet-12.1"  clone-depth="1"/>
+  
+  <!-- Hardware_xiaomi -->
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-19.1" />
  
 
 </manifest>
