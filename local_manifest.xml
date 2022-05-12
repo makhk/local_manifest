@@ -9,7 +9,7 @@
     <remote  name="vantoman"
            fetch="https://github.com/vantoman" />
  
-    <remote  name="trb_clang"
+    <remote  name="trbclang"
            fetch="https://gitlab.com/varunhardgamer" />
   
  <!-- Device Trees -->
@@ -23,7 +23,7 @@
   <project path="kernel/xiaomi/sm6150"  name="kernel_xiaomi_sm6150" remote="vantoman" revision="courbet-12.1"  clone-depth="1"/>
   
    <!-- trb_clang -->
-  <project path="prebuilts/clang/host/linux-x86/trb_clang"  name="trb_clang" remote="trb_clang" revision="15"  clone-depth="1"/> 
+  <project path="prebuilts/clang/host/linux-x86/trb_clang"  name="trb_clang" remote="trbclang" revision="15"  clone-depth="1"/> 
   
   <!-- Hardware_xiaomi -->
   <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-19.1" />
