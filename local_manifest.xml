@@ -12,6 +12,9 @@
     <remote  name="trbclang"
            fetch="https://gitlab.com/varunhardgamer" />
   
+    <remote  name="aryan"
+           fetch="https://gitlab.com/basamaryan" />
+  
  <!-- Device Trees -->
   <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet-1" remote="makhkdevices" revision="12.1"/>
   <project path="device/xiaomi/sm6150-common"  name="device_xiaomi_sm6150-common" remote="makhkdevices" revision="12.1"/>
@@ -27,6 +30,9 @@
   
   <!-- Hardware_xiaomi -->
   <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-19.1" />
+  
+   <!-- MIUI Camera -->
+ <project path="vendor/xiaomi/sweet-miuicamera" name="vendor_xiaomi_sweet-miuicamera" remote="aryan" revision="12.1" />
  
 
 </manifest>
