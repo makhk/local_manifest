@@ -3,6 +3,9 @@
   <remote  name="makhk"
            fetch="https://github.com/makhk" />
   
+  <remote  name="aryan"
+           fetch="https://gitlab.com/basamaryan" />  
+  
   <!-- Device Trees -->
   <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhk" revision="12-aex"/>
 
@@ -11,5 +14,9 @@
   
   <!-- Kernels -->
   <project path="kernel/xiaomi/sweet"  name="kernel_xiaomi_sweet" remote="makhk" revision="12"  clone-depth="1"/>
+  
 
+  <!-- MiuiCam -->
+  <project path="vendor/xiaomi/sweet-miuicamera" name="vendor_xiaomi_sweet-miuicamera" remote="aryan" revision="12.1" />
+  
 </manifest>
