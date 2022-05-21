@@ -34,5 +34,11 @@
    <!-- MIUI Camera -->
  <project path="vendor/xiaomi/sweet-miuicamera" name="vendor_xiaomi_sweet-miuicamera" remote="aryan" revision="12.1" />
  
+<remove-project name="android_frameworks_av" />
+<remove-project name="android_frameworks_base" />
+
+<project path="frameworks/av" name="android_frameworks_av" remote="makhk" revision="lineage-19.1" />
+<project path="frameworks/base" name="android_frameworks_base" remote="makhk" revision="lineage-19.1" />
+
 
 </manifest>
