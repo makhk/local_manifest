@@ -26,7 +26,7 @@
   <project path="prebuilts/clang/host/linux-x86/clang-playground"  name="playgroundtc" remote="playgroundclang" revision="15"  clone-depth="1"/> 
   
   <!-- Hardware_xiaomi -->
-  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="makhk" revision="lineage-19.1" />
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="makhk" revision="lineage-19.1" />
   
 
 </manifest>
