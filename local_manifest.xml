@@ -3,30 +3,30 @@
   <remote  name="makhk"
            fetch="https://github.com/makhk" />
   
-    <remote  name="makhkdevices"
-           fetch="https://github.com/makhk-devices" />
+    <remote  name="makhksweet"
+           fetch="https://github.com/makhk-sweet" />
 
     <remote  name="vantoman"
            fetch="https://github.com/vantoman" />
  
-    <remote  name="trbclang"
-           fetch="https://gitlab.com/varunhardgamer" />
+    <remote  name="playgroundclang"
+           fetch="https://gitlab.com/PixelOS-Devices" />
   
  <!-- Device Trees -->
-  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet-1" remote="makhkdevices" revision="12.1"/>
-  <project path="device/xiaomi/sm6150-common"  name="device_xiaomi_sm6150-common" remote="makhkdevices" revision="12.1"/>
+  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhksweet" revision="12.1"/>
+  <project path="device/xiaomi/sm6150-common"  name="device_xiaomi_sm6150-common" remote="makhksweet" revision="12.1"/>
 
  <!-- Vendor Trees -->
- <project path="vendor/xiaomi" name="vendor_xiaomi" remote="makhkdevices" revision="12.1" />
+ <project path="vendor/xiaomi" name="vendor_xiaomi" remote="makhksweet" revision="12.1" />
  
   <!-- Kernels -->
   <project path="kernel/xiaomi/sm6150"  name="kernel_xiaomi_sm6150" remote="vantoman" revision="courbet-12.1"  clone-depth="1"/>
   
-   <!-- trb_clang -->
-  <project path="prebuilts/clang/host/linux-x86/trb_clang"  name="trb_clang" remote="trbclang" revision="15"  clone-depth="1"/> 
+   <!-- playgroud_clang -->
+  <project path="prebuilts/clang/host/linux-x86/clang-playground"  name="playgroundtc" remote="playgroundclang" revision="15"  clone-depth="1"/> 
   
   <!-- Hardware_xiaomi -->
-  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" revision="lineage-19.1" />
+  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="makhk" revision="lineage-19.1" />
   
 
 </manifest>
