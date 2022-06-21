@@ -20,7 +20,7 @@
  <project path="vendor/xiaomi" name="vendor_xiaomi" remote="makhksweet" revision="12.1" />
  
   <!-- Kernels -->
-  <project path="kernel/xiaomi/sm6150"  name="kernel_xiaomi_sm6150" remote="vantoman" revision="courbet-12.1"  clone-depth="1"/>
+  <project path="kernel/xiaomi/sm6150"  name="kernel_xiaomi_sm6150" remote="makhksweet" revision="courbet-12.1"  clone-depth="1"/>
   
    <!-- playgroud_clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-playground"  name="playgroundtc" remote="playgroundclang" revision="15"  clone-depth="1"/> 
