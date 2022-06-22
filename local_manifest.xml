@@ -28,7 +28,7 @@
   <!-- Hardware_xiaomi -->
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="makhk" revision="lineage-19.1" />
  
-<remove-project name="packages/apps/Settings" />
+
 <remove-project name="frameworks/base" />
 <remove-project name="build/make" />
 
