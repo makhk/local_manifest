@@ -13,11 +13,11 @@
            fetch="https://gitlab.com/PixelOS-Devices" />
   
  <!-- Device Trees -->
-  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhksweet" revision="12.1"/>
-  <project path="device/xiaomi/sm6150-common"  name="device_xiaomi_sm6150-common" remote="makhksweet" revision="12.1"/>
+  <project path="device/xiaomi/sweet"  name="device_xiaomi_sweet" remote="makhksweet" revision="twelve"/>
+  <project path="device/xiaomi/sm6150-common"  name="device_xiaomi_sm6150-common" remote="makhksweet" revision="twelve"/>
 
  <!-- Vendor Trees -->
- <project path="vendor/xiaomi" name="vendor_xiaomi" remote="makhksweet" revision="12.1" />
+ <project path="vendor/xiaomi" name="vendor_xiaomi" remote="makhksweet" revision="twelve" />
  
   <!-- Kernels -->
   <project path="kernel/xiaomi/sm6150"  name="kernel_xiaomi_sm6150" remote="makhksweet" revision="courbet-12.1"  clone-depth="1"/>
@@ -28,10 +28,5 @@
   <!-- Hardware_xiaomi -->
   <project path="hardware/xiaomi" name="android_hardware_xiaomi" remote="makhk" revision="lineage-19.1" />
   
-<remove-project name="LineageOS/android_packages_apps_Settings" />
-<remove-project name="LineageOS/android_frameworks_base" />
-
-<project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="makhk" revision="lineage-19.1" />
-<project path="frameworks/base" name="android_frameworks_base" remote="makhk" revision="lineage-19.1-1" />
  
 </manifest>
